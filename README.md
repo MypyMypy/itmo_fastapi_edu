@@ -12,8 +12,8 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone <URL репозитория>
-   cd repository
+   git clone https://github.com/MypyMypy/itmo_fastapi_edu.git
+   cd ./itmo_fastapi_edu
 
    ```
 
