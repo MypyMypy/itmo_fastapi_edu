@@ -13,3 +13,4 @@ class Term(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True, nullable=False)
     description = Column(String, nullable=False)
+    link = Column(String, nullable=True, default=None)

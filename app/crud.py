@@ -6,7 +6,7 @@ def get_all_terms(db: Session):
     return db.query(Term).all()
 
 def create_term(db: Session, term: TermCreate):
-    db_term = Term(name=term.name, description=term.description)
+    db_term = Term(name=term.name, description=term.description, link=term.link)
     db.add(db_term)
     db.commit()
     db.refresh(db_term)
@@ -19,6 +19,7 @@ def update_term(db: Session, name: str, term: TermCreate):
     db_term = db.query(Term).filter(Term.name == name).first()
     db_term.name = term.name
     db_term.description = term.description
+    db_term.link = term.link
     db.commit()
     db.refresh(db_term)
     return db_term

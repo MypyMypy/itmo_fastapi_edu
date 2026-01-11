@@ -53,6 +53,8 @@ python -m uvicorn app.main:app --reload
 
 - ReDoc: http://127.0.0.1:8000/redoc
 
+- Веб-интерфейс: http://127.0.0.1:8000/glossary
+
 ## Вид приложения:
 
 1. http://127.0.0.1:8000
@@ -66,3 +68,7 @@ python -m uvicorn app.main:app --reload
 3. http://127.0.0.1:8000/redoc
 
 ![Скрин](redoc.png)
+
+4. http://127.0.0.1:8000/glossary
+
+![Скрин](glossary.png)
